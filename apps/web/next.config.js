@@ -20,6 +20,8 @@ module.exports = withAxiom({
       "@dub/utils",
       "@team-plain/typescript-sdk",
     ],
+    bundlePagesRouterDependencies: true,
+    optimizeServerReact: true,
     ...(process.env.NODE_ENV === "production" && {
       esmExternals: "loose",
     }),
